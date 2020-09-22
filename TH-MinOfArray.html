@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TH</title>
+</head>
+<body>
+<script>
+    let arr1 = [3, 5, 1, 8, -3, 7, 8];
+
+    let arr2= [7, 12, 6, 9, 20, 56, 89];
+
+    let arr3= [];
+
+    let arr4= [0, 0, 0, 0, 0, 0];
+    function a(b){
+        let min = b[0];
+        for (let i =1; i<b.length;i++){
+            if (b[i] <= min){
+                min = b[i];
+            }
+        }
+        console.log(min);
+    }
+    a(arr1);
+    a(arr2);
+    a(arr3);
+    a(arr4);
+
+</script>
+</body>
+</html>

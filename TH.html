@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi nhiet do</title>
+</head>
+<body>
+
+Do F:
+<b><input type="number" id="doF" onkeyup="nhap()"></b><br><br>
+
+Do C:
+<b id="doC"></b>
+
+<script>
+
+    function nhap(){
+        var f = document.getElementById("doF");
+        var f1 = parseFloat(f.value);
+        var c = (f1-32)/10*18;
+        document.getElementById("doC").innerHTML = c;
+    }
+</script>
+</body>
+</html>
